@@ -5,6 +5,7 @@ use App\User;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 use Illuminate\Support\Facades\Hash;
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -16,8 +17,7 @@ class UsersTableSeeder extends Seeder
     {
         $adminRole = Role::create(['name' => 'Admin']);
         $adminPermissions = ['manage-users', 'view-users', 'create-users', 'edit-users', 'delete-users'];
-        foreach($adminPermissions as $ap)
-        {
+        foreach ($adminPermissions as $ap) {
             $permission = Permission::create(['name' => $ap]);
             $adminRole->givePermissionTo($permission);
         }
@@ -30,8 +30,7 @@ class UsersTableSeeder extends Seeder
 
         $editorRole = Role::create(['name' => 'Editor']);
         $editorPermissions = ['manage-users', 'view-users'];
-        foreach($editorPermissions as $ep)
-        {
+        foreach ($editorPermissions as $ep) {
             $permission = Permission::firstOrCreate(['name' => $ep]);
             $editorRole->givePermissionTo($permission);
         }

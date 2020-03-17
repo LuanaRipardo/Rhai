@@ -4,7 +4,7 @@
     <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
   </ul>
   <div class="search-element">
-    <input class="form-control" value="{{ Request::get('query') }}" name="query" type="search" placeholder="Search" aria-label="Search" data-width="250">
+    <input class="form-control" value="{{ Request::get('query') }}" name="query" type="search" placeholder="Buscar" aria-label="Search" data-width="250">
     <button class="btn" type="submit"><i class="fas fa-search"></i></button>
     <div class="search-backdrop"></div>
     {{-- @include('admin.partials.searchhistory') --}}
@@ -32,7 +32,7 @@
         </a>
         @endfor
         @else
-        <p class="text-muted p-2 text-center">No notifications found!</p>
+        <p class="text-muted p-2 text-center">Não há notificações</p>
         @endif
     </div>
   </li>

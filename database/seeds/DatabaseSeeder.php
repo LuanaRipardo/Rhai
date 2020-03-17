@@ -9,8 +9,14 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
+    private $seeders = [
+        UsersTableSeeder::class,
+        CategoryTableSeeder::class,
+        #PostsTableSeeder::class,
+        #ContactsTableSeeder::class
+    ];
     public function run()
     {
-        $this->call(UsersTableSeeder::class);
+        $this->call($this->seeders);
     }
 }
