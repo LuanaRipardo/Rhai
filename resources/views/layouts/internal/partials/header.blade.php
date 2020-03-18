@@ -51,6 +51,11 @@
     <!-- responsive -->
     <link rel="stylesheet" type="text/css" href="{{ asset('principal/css/responsive.css') }}"/>
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('principal/css/light.css') }}"/>
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('principal/css/lightbox.min.css') }}"/>
+
+
     <style>
 
         .float-right-button-sob {

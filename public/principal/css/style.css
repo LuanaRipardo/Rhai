@@ -1,0 +1,125 @@
+/* 25. Portfolio */
+.portfolio-filter {
+    border-bottom: 2px solid #dde3ff;
+    display: inline-block;
+    padding: 0;
+}
+.portfolio-filter button {
+    background: none;
+    padding: 25px 20px;
+    padding-top: 0;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 2px;
+    color: #6f7881;
+    position: relative;
+}
+.portfolio-filter button:hover,.portfolio-filter button.active{
+    position: relative;
+    color: #e12454;
+}
+.portfolio-filter button::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 100%;
+    background: #e12454;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.portfolio-filter button.active::before, .portfolio-filter button:hover::before {
+    width: 100%;
+    left: 0;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
+.portfolio-wrapper {
+    position: relative;
+}
+.portfolio-image {
+    position: relative;
+}
+.portfolio-image::before {
+    background: #e12454;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.portfolio-wrapper:hover .portfolio-image::before {
+    opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.view-icon a {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+}
+.view-icon {
+    text-align: center;
+    top: 20px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    z-index: 9;
+    -webkit-transition: .3s;
+    transition: .3s;
+    left: 30px;
+    position: absolute;
+}
+.portfolio-wrapper:hover .view-icon {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    top: 30px;
+}
+.portfolio-caption {
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding: 30px;
+    position: absolute;
+    bottom: 5px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    right: 0;
+    transform: translateY(10px);
+}
+.portfolio-wrapper:hover .portfolio-caption {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    transform: translateY(0px);
+}
+.portfolio-caption h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    padding-bottom: 6px;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+.portfolio-caption p {
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0;
+}
+
+.img,img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}

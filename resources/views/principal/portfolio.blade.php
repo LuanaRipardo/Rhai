@@ -1,60 +1,63 @@
 @extends('layouts.internal.main')
 @section('content')
 
-    <div class="container gallery-container">
-
-        <h1 style="margin-top: 180px;">Galeria de fotos</h1>
-
-        <p class="page-description text-center">Melhores momentos</p>
-
-        <div class="tz-gallery">
-
+    <!-- page-title -->
+    <div class="ttm-page-title-row">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-4" >
-                    <a class="lightbox" href="{{ asset('principal/images/gallery/1.jpeg') }}">
-                        <img src="{{ asset('principal/images/gallery/1.jpeg') }}" style="width: 462px; margin-left: -300px; height: 364px;" alt="Park">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{ asset('principal/images/gallery/2.jpeg') }}">
-                        <img src="{{ asset('principal/images/gallery/2.jpeg') }}" style="width: 462px; margin-left: -180px; height: 500px;" alt="Bridge">
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="{{ asset('principal/images/gallery/3.jpeg') }}">
-                        <img src="{{ asset('principal/images/gallery/3.jpeg') }}"  style="width: 594px; margin-left: -5px; height: 500px;" alt="Tunnel">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{ asset('principal/images/gallery/4.jpeg') }}">
-                        <img src="{{ asset('principal/images/gallery/4.jpeg') }}"  style="width: 462px; margin-left: -305px; height: 610px; margin-top: -99px;" alt="Coast">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{ asset('principal/images/gallery/5.jpeg') }}">
-                        <img src="{{ asset('principal/images/gallery/5.jpeg') }}"  style="    width: 462px; margin-left: -180px; height: 513px; margin-top:40px;" alt="Rails">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{ asset('principal/images/gallery/6.jpeg') }}">
-                        <img src="{{ asset('principal/images/gallery/6.jpeg') }}"  style="width: 462px; margin-left: -6px; height: 541px; margin-top: 41px;" alt="Traffic">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{ asset('principal/images/gallery/7.jpeg') }}">
-                        <img src="{{ asset('principal/images/gallery/7.jpeg') }}"  style="width: 462px; margin-left: -308px; height: 500px; margin-top: -14px;" alt="Rocks">
-                    </a>
-                </div>
+                <div class="col-md-12">
+                    <div class="title-box ttm-textcolor-white">
+                        <div class="page-title-heading">
+                            <h1 class="title"> Sobre</h1>
+                            <h3 class="subtitle"> Sobre Dra.Rhaiana</h3>
+                        </div><!-- /.page-title-captions -->
+                        <div class="breadcrumb-wrapper">
+                            <div class="container">
+                                <div class="breadcrumb-wrapper-inner">
+                                        <span>
+                                            <a title="Go to Delmont." href="{{ route('home-site') }}" class="home"><i class="themifyicon ti-home"></i>&nbspHome</a>
+                                        </span>
+                                    <span class="ttm-bread-sep">&nbsp; | &nbsp;</span>
+                                    <span>Sobre</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- page-title end-->
 
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/sky.jpeg">
-                        <img src="../images/sky.jpeg" alt="Sky">
-                    </a>
-                </div>
-            </div>
 
-        </div>
 
-    </div>
+
+
+
+
+        <div class="gallery">
+            <a href="{{ asset('principal/images/gallery/1.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/1.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/2.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/2.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/3.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/3.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/4.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/4.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/5.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/5.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/6.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/6.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/7.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/7.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/8.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/8.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/9.jpeg') }}"  data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/9.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/10.jpeg') }}" data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/10.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/11.jpeg') }}" data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/11.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/12.jpeg') }}" data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/12.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/13.jpeg') }}" data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/13.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/14.jpeg') }}" data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/14.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/15.jpeg') }}" data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/15.jpeg') }}"></a>
+            <a href="{{ asset('principal/images/gallery/16.jpeg') }}" data-lightbox="mygallery"><img src="{{ asset('principal/images/gallery/16.jpeg') }}"></a>
+
+
+
+
+
+
+    </div><!--site-main end-->
 
 @endsection
+

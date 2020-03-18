@@ -123,7 +123,8 @@
 <script src="{{ asset('principal/js/booked-calendar.js') }}"></script>
 <script src="{{ asset('principal/js/main.js') }}"></script>
 <script src='{{ asset('principal/js/isotope.js') }}'></script>
-<script src='{{ asset('principal/js/simple-lightbox.js') }}'></script>
+<script src="{{ asset('principal/js/lightbox-plus-jquery.min.js') }}"></script>
+
 
 
 
@@ -142,6 +143,7 @@
 <script src="{{ asset('principal/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
 <script src="{{ asset('principal/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
 <script src="{{ asset('principal/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+
 
 <!-- Javascript end-->
 
