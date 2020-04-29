@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-use App\Models\Contact;
+useApp\Models\Contact;
 use App\Support\MailService;
 
 class ContactObserver

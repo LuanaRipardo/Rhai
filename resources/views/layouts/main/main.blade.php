@@ -8,3 +8,4 @@
 @yield('content')
 
 @include('layouts.main.partials.footer')
+

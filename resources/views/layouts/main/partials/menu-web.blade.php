@@ -56,7 +56,7 @@
                                     <li><a href="#">Tratamentos+</a>
                                         <ul>
                                             @foreach ($items->where('category_id', array_search('TREATMENT', \App\Models\Blog\Post::TYPE))->get() as $treatment)
-                                                <li><a href="{{ route('tratamentos', $treatment->slug) }}">{{ ucfirst($treatment->title) }}</a></li>
+                                                <li><a href="{{ route('tratamentos', $treatment->slug) }}">{{ route('tratamentos', $treatment->slug) }}</a></li>
                                             @endforeach
                                         </ul>
 

@@ -108,7 +108,6 @@
 
 
 <!-- Javascript -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='js/jquery.js'></script>
 <script src="{{ asset('principal/js/jquery.min.js') }}"></script>
 <script src="{{ asset('principal/js/tether.min.js') }}"></script>
 <script src="{{ asset('principal/js/bootstrap.min.js') }}"></script>
@@ -122,9 +121,6 @@
 <script src="{{ asset('principal/js/jquery.twentytwenty.js') }}"></script>
 <script src="{{ asset('principal/js/booked-calendar.js') }}"></script>
 <script src="{{ asset('principal/js/main.js') }}"></script>
-<script src='{{ asset('principal/js/isotope.js') }}'></script>
-<script src="{{ asset('principal/js/lightbox-plus-jquery.min.js') }}"></script>
-
 
 
 

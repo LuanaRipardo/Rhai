@@ -124,21 +124,14 @@
 <script src="{{ asset('principal/js/main.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <!-- Javascript end-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+<script>
+    lightbox.option({
+        albumLabel: 'Imagem %1 de %2'
+    })
+</script>
 
 
-
-<script src="{{ asset('principal/js/isotope.pkgd.min.js') }}"></script>
-<script src="{{ asset('principal/js/one-page-nav-min.js') }}"></script>
-<script src="{{ asset('principal/js/slick.min.js') }}"></script>
-
-
-
-<script src="{{ asset('princiapal/js/jquery.scrollUp.min.js') }}"></script>
-<script src="{{ asset('principal/js/jquery.meanmenu.min.js') }}"></script>
-<script src="{{ asset('principal/js/jquery.counterup.min.js') }}"></script>
-<script src="{{ asset('principal/js/waypoints.min.js') }}"></script>
-
-<script src="{{ asset('principal/js/jquery.magnific-popup.min.js') }}"></script>
 
 </body>
 </html>

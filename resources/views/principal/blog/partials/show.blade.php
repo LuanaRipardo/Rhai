@@ -60,7 +60,7 @@
 
                                 <div class="entry-content">
 
-                                    {!! $post->content !!}
+                                    {!! strip_tags($post->content) !!}
 
 
                                     <div class="ttm-blogbox-desc-footer">

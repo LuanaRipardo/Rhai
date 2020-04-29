@@ -17,9 +17,7 @@ class PortfolioController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $images = Portfolio::paginate();
-        $title =  Portfolio::paginate();
-        return view('principal.portfolio', compact('images', 'title'));
+        return view('principal.portfolio');
     }
 }
 
